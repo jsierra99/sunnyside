@@ -1,0 +1,56 @@
+section.reviews {
+  background: #FFFBF8;
+  padding: 10rem 0;
+}
+
+section.reviews .container {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+section.reviews .container h1 {
+  text-align: center;
+  color: #ABABAD;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 4rem;
+}
+
+section.reviews .container .grid_reviews {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+section.reviews .container .grid_reviews img {
+  width: 20%;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+  cursor: pointer;
+}
+
+section.reviews .container .grid_reviews p, section.reviews .container .grid_reviews h3, section.reviews .container .grid_reviews h5 {
+  text-align: center;
+}
+
+section.reviews .container .grid_reviews p {
+  font-weight: 500;
+  line-height: 25px;
+  margin-bottom: 4rem;
+}
+
+section.reviews .container .grid_reviews h3 {
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+
+section.reviews .container .grid_reviews h5 {
+  color: #ABABAD;
+  text-transform: uppercase;
+  font-size: .75rem;
+}
+/*# sourceMappingURL=reviews.css.map */

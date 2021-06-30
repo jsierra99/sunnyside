@@ -1,0 +1,128 @@
+section.home {
+  height: 100vh;
+  padding: 2rem;
+  background: url("../img/image-header.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+section.home header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: transparent;
+}
+
+section.home header img.hamburger {
+  display: none;
+}
+
+section.home header img.logo {
+  width: 100px;
+  height: 25px;
+}
+
+section.home header img.close {
+  display: none;
+}
+
+section.home header nav ul li {
+  display: inline-block;
+  padding-left: 2rem;
+}
+
+section.home header nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+section.home header nav ul li button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: .8rem;
+  padding: .75rem 1.25rem;
+  border-radius: 30px;
+  font-weight: 900;
+}
+
+section.home h1 {
+  text-align: center;
+  margin-top: 8rem;
+  margin-bottom: 5rem;
+  color: #fff;
+  font-size: 3.5rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+section.home img.arrow {
+  display: block;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 580px) {
+  section.home {
+    background: url("../imgMobile/image-header.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+  }
+  section.home header nav {
+    display: none;
+  }
+  section.home header img.hamburger {
+    display: block;
+    cursor: pointer;
+    width: 35px;
+    height: 25px;
+  }
+  section.home header img.close {
+    display: none;
+  }
+  section.home header.show {
+    position: relative;
+  }
+  section.home header.show img.hamburger {
+    display: none;
+  }
+  section.home header.show img.close {
+    display: block;
+    cursor: pointer;
+  }
+  section.home header.show nav {
+    display: block;
+    margin: 0 auto;
+    position: absolute !important;
+    top: 80px;
+    left: 0px;
+    width: 100%;
+    height: 270px;
+    background: #fff;
+  }
+  section.home header.show nav ul {
+    text-align: center;
+  }
+  section.home header.show nav ul li {
+    display: block;
+    padding-left: 0;
+    padding-top: 2rem;
+  }
+  section.home header.show nav ul li a {
+    color: gray;
+  }
+  section.home header.show nav ul li button {
+    background: #FBD601;
+    padding: 1rem 1.5rem;
+    -webkit-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+  }
+  section.home header.show nav ul li button:hover {
+    opacity: .75;
+  }
+}
+/*# sourceMappingURL=header.css.map */

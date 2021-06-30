@@ -1,0 +1,167 @@
+section.home
+{
+    height: 100vh;
+    padding: 2rem;
+    background: url("../img/image-header.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    header
+    {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        background: transparent;
+
+        img.hamburger
+        {
+            display: none;
+        }
+
+        img.logo
+        {
+            width: 100px;
+            height: 25px;
+        }
+
+        img.close
+        {
+            display: none;
+        }
+
+        nav
+        {
+            ul
+            {
+                li
+                {
+                    display: inline-block;
+                    padding-left: 2rem;
+
+                    a
+                    {
+                        text-decoration: none;
+                        color: #fff;
+                    }
+
+                    button
+                    {
+                        border: none;
+                        outline: none;
+                        cursor: pointer;
+                        font-size: .8rem;
+                        padding: .75rem 1.25rem;
+                        border-radius: 30px;
+                        font-weight: 900;
+                    }
+                }
+            }
+        }
+    }
+
+    h1
+    {
+        text-align: center;
+        margin-top: 8rem;
+        margin-bottom: 5rem;
+        color: #fff;
+        font-size: 3.5rem;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+    }
+
+    img.arrow
+    {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 580px) 
+{
+    section.home
+    {
+        background: url("../imgMobile/image-header.jpg") no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 80vh;
+
+        header
+        {
+            nav
+            {
+                display: none;
+            }
+
+            img.hamburger
+            {
+                display: block;
+                cursor: pointer;
+                width: 35px;
+                height: 25px;
+            }
+
+            img.close
+            {
+                display: none;
+            }
+        }
+
+        header.show
+        {
+            position: relative;
+            
+            img.hamburger
+            {
+                display: none;
+            }
+
+            img.close
+            {
+                display: block;
+                cursor: pointer;
+            }
+
+            nav
+            {
+                display: block;
+                margin: 0 auto;
+                position: absolute !important;
+                top: 80px;
+                left: 0px;
+                width: 100%;
+                height: 270px;
+                background: #fff;
+
+                ul
+                {
+                    text-align: center;
+                    
+                    li
+                    {
+                        display: block;
+                        padding-left: 0;
+                        padding-top: 2rem;
+                        
+                        a
+                        {
+                            color: gray;
+                        }
+
+                        button
+                        {
+                            background: #FBD601;
+                            padding: 1rem 1.5rem;
+                            transition: .5s ease-in-out;
+
+                            &:hover
+                            {
+                                opacity: .75;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

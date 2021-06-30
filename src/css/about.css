@@ -1,0 +1,133 @@
+section.about {
+  background: #FFFBF8;
+}
+
+section.about .grid_about {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+section.about .grid_about button.btn {
+  font-size: 1rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  padding: .25rem .6rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+section.about .grid_about button.yellow_btn {
+  background: #fffbf8;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(65%, #fffbf8), color-stop(38%, #fff2ba));
+  background: linear-gradient(to bottom, #fffbf8 65%, #fff2ba 38%);
+}
+
+section.about .grid_about button.pink_btn {
+  background: #fffbf8;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(65%, #fffbf8), color-stop(38%, #fedbd3));
+  background: linear-gradient(to bottom, #fffbf8 65%, #fedbd3 38%);
+}
+
+section.about .grid_about img {
+  width: 100%;
+}
+
+section.about .grid_about .about1 {
+  max-width: 80%;
+  margin: auto;
+  max-height: 80%;
+}
+
+section.about .grid_about .about1 h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+section.about .grid_about .about1 p {
+  line-height: 25px;
+  color: gray;
+  margin-bottom: 2.5rem;
+}
+
+section.about .grid_about .about_fruit {
+  padding-bottom: 5rem;
+  padding: 0 10% 5rem 10%;
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section.about .grid_about .about_fruit h3 {
+  margin-top: auto;
+  text-align: center;
+  font-size: 2rem;
+  text-transform: capitalize;
+  margin-bottom: 2rem;
+}
+
+section.about .grid_about .about_fruit p {
+  text-align: center;
+  max-width: 55%;
+  margin: 0 auto;
+  line-height: 25px;
+}
+
+section.about .grid_about .cherry {
+  background: url("../img/image-graphic-design.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+section.about .grid_about .orange {
+  background: url("../img/image-photography.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media only screen and (max-width: 910px) {
+  section.about .grid_about {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+  }
+  section.about .grid_about .about1 {
+    max-height: 100%;
+    padding: 4rem;
+  }
+  section.about .grid_about .about1 h2 {
+    font-size: 2rem !important;
+  }
+  section.about .grid_about .about1 p {
+    font-size: .9rem;
+  }
+  section.about .grid_about .about1 button {
+    font-size: .9rem;
+  }
+  section.about .grid_about img.egg {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  section.about .grid_about h2 {
+    font-size: 2.5rem !important;
+  }
+  section.about .grid_about .cherry {
+    background: url("../imgMobile/image-graphic-design.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  section.about .grid_about .about_fruit p {
+    max-width: 100%;
+  }
+}
+/*# sourceMappingURL=about.css.map */
